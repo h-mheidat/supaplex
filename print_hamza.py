@@ -1,3 +1,3 @@
 
-def print_hamza() -> None:
-    print("Hello Hamza")
+def print_tamara() -> None:
+    print("Hello Tamara")
