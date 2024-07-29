@@ -1,0 +1,33 @@
+public class Sunlight{
+public static void main (String[] args){
+
+int[] buildingHeights={3,5,4,4,3,1,3,2}
+List Integer Sunlight= getSunlight(buildingHeights);
+System.out.println("Buildings that see the sun are:"+Sunlightbuildings)
+
+}
+public static List Integer getSunlight(int[] heights){
+List Integer Sunlightbuildings= new ArrayList();
+int maxHeight=0;
+for(int i=0;i<heights.length;i++){
+if(eights[i]>maxHeight){
+    sunlightbuildings,add(i);
+    maxHeight=heights[i];
+}
+
+}
+
+return sunlightbuildings;
+}
+
+
+
+
+
+
+
+
+
+
+
+}
