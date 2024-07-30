@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    background-color: #faf9f9;
+}
+
+.container {
+    display:inline-flex;
+    height: 700px;
+    }
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.sedan {
+    background-color: #FF8C00; /* Bright Orange */
+}
+
+.suv {
+    background-color: #00CED1; /* Dark Cyan */
+}
+
+.luxury {
+    background-color: #4682B4; /* Very Dark Cyan */
+}
+
+h2 {
+    font-size:x-large;
+    margin-bottom: 10px;
+    font-family: 'Franklin Gothic Medium';
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: white;
+    color: #333;
+}
+.div{
+    background-color: #FF8C00;
+    width: fit-content;
+    height: fit-content;
+    display:flex;
+
+}
