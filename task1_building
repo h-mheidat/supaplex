@@ -1,0 +1,19 @@
+def building_length() -> None:
+    building_leng=[3,5,4,4,3,1,3,2]
+    
+    result=[]
+    max=0
+    final_array=[]
+    i=len(building_leng) -1
+    while  i>0:      
+        if(max<building_leng[i]):
+                max=building_leng[i]
+                result.append(max)
+        i-=1      
+    j=len(result)-1
+    while j>=0:
+        final_array.append(result[j])
+        j-=1
+
+    print(final_array)
+building_length()
