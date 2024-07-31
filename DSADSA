@@ -1,0 +1,7 @@
+/* Tablet - SEDAN */
+
+position: relative;
+width: 768px;
+height: 1024px;
+overflow: scroll;
+
