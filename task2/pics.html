@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flickr Photos</title>
+    <style>
+      
+        #photo-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-content: center;
+        }
+        .photo {
+            border: 1px solid #ddd;
+            padding: 5px;
+            align-content:center;
+        }
+        .photo img {
+            max-width: 200px;
+            height: auto;
+        }
+        #search-container {
+            margin-bottom: 20px;
+        }
+        #pagination {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .pagination-link {
+            margin: 0 5px;
+            text-decoration: none;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="search-container">
+        <input type="text" id="search-input" placeholder="Search for photos...">
+        <button id="search-button">Search</button>
+    </div>
+    <h1>Bird Photos from Flickr</h1>
+    <div id="photo-container">Loading photos...</div>
+    <div id="photo-container">Loading photos...</div>
+    <div id="pagination"></div>
+
+    <script src="fetch.js"></script>
+</body>
+</html>
