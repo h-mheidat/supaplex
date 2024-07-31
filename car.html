@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400&family=Lexend+Deca:wght@400&display=swap" rel="stylesheet">
+
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental</title>
+    <style>
+        body, html {
+            height: 100%; /* Make sure html and body take full height */
+            margin: 0; /* Remove default margin */
+            width: 100%;
+        }
+        :root {
+            --card1: #E38826;
+            --card2: #006970;
+            --card3: #004241;
+        }
+
+        .container {
+            display: grid; /* Use grid layout */
+            grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+            height: 100%;
+            
+          
+            width: 100%;
+          
+        }
+
+        .card {
+            
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    background-color: var(--card1);
+    padding: 20px;
+    height: 100vh;
+    
+
+           
+         
+         
+           
+          
+        }
+
+        .card_item{
+           padding: 33%;
+           display: flex;
+           flex-direction: column;
+           width: 33%;
+           justify-content: space-between; /* Adjusts space between items */
+         
+        }
+
+        .card1 {
+            background-color: var(--card1);
+        }
+        
+        .card2 {
+            background-color: var(--card2);
+        }
+
+        .card3 {
+            background-color: var(--card3);
+        }
+
+        .card img {
+            width: 64px;
+            height: 40px;
+            margin-bottom: 10px;
+        }
+
+        .card h2 {
+            color: white;
+            margin: 0;
+          
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 10px;
+            gap: 10px;
+          
+            font-family: 'Big Shoulders Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 40px;
+            width: 73px;
+            height: 60px;
+          
+           
+        }
+
+        .card p {
+          
+          
+                      
+            font-size: 15px;
+            
+            color: #FFFFFF;
+            margin: 0;
+            padding-bottom: 25px;
+            font-family: 'Lexend Deca';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 19px;
+            display: flex;
+            align-items: center;
+            
+
+        
+        }
+
+        .btn {
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 15px 30px;
+            gap: 8px;
+            width: 143px;
+            height: 49px;
+            border: 1px solid #F2F2F2;
+            border-radius: 30px;
+            background: none; /* Ensure no background color */
+            text-align: center;
+            cursor: pointer;
+            align-self: center;
+            color: white;
+        }
+
+        .card1 .btn:hover {
+            background: #F2F2F2; /* Change background on hover */
+            color: var(--card1); /* Set text color based on the card */
+        }
+
+        .card2 .btn:hover {
+            background: #F2F2F2; /* Change background on hover */
+            color: var(--card2); /* Set text color based on the card */
+        }
+
+        .card3 .btn:hover {
+            background: #F2F2F2; /* Change background on hover */
+            color: var(--card3); /* Set text color based on the card */
+        }
+
+        /* Responsive Design */
+        @media (min-width: 1024px) {
+            .container {
+                grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+            }
+        }
+
+        @media (max-width: 1023px) and (min-width: 768px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+            }
+            
+        }
+
+        @media (max-width: 767px) {
+            .container {
+                display: flex;
+                grid-template-columns: repeat(1, 1fr); /* 1 card per row */
+            }
+            
+            
+            
+          
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card card1">
+            <div class="card_item">
+                <img src="icon/car1.png" alt="Sedan">
+                <h2>SEDAN</h2>
+                <p>
+                    Choose a sedan for its 
+                    affordability and excellent 
+                    fuel economy. Ideal for 
+                    cruising in the city or on your 
+                    next road trip.
+                </p>
+                <button class="btn">Learn More</button>
+            </div>
+        </div>
+
+        <div class="card card2">
+            <div class="card_item">
+                <img src="icon/car2.png" alt="SUV">
+                <h2>SUVS</h2>
+                <p>
+                    Take an SUV for its spacious 
+                    interior, power, and 
+                    versatility. Perfect for your 
+                    next family vacation and 
+                    off-road adventures.
+                </p>
+                <button class="btn">Learn More</button>
+            </div>
+        </div>
+
+        <div class="card card3">
+            <div class="card_item">
+                <img src="icon/car3.png" alt="Luxury">
+                <h2>LUXURY</h2>
+                <p>
+                    Cruise in the best car brands 
+                    without the bloated prices. 
+                    Enjoy the enhanced comfort 
+                    of a luxury rental and arrive 
+                    in style.
+                </p>
+                <button class="btn">Learn More</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
