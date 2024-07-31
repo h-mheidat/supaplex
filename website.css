@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+:root {
+    --orange: #E38826;
+    --cyan: #006970;
+    --darkcyan: #004241;
+    --white: #ffffff;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0; 
+    height: 100vh;
+}
+
+.image img {
+    width: 64px;
+    height: 40px;
+    display: block;
+    margin: 0 auto; 
+}
+
+.SEDAN, .SUVS, .LUXURY {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.SEDAN {
+    background: var(--orange);
+}
+
+.SUVS {
+    background: var(--cyan);
+}
+
+.LUXURY {
+    background: var(--darkcyan);
+}
+
+.title {
+    color: var(--white);
+    text-align: center;
+    margin: 20px 0;
+}
+
+.para {
+    color: var(--white);
+    text-align: center;
+    margin: 20px 0;
+}
+
+.buttoncss {
+border-radius:30px; 
+padding:5% 19%;
+background-color: transparent;
+color: var(--white);
+border: 2px solid var(--white);
+}
+
+#sebutton:hover{
+background-color: var(--white);
+color:var(--orange);
+}
+#subutton:hover{
+background-color:var(--white);
+color: var(--cyan);
+}
+#lubutton:hover{
+background-color:var(--white);
+color: var(--darkcyan);
+}
+
+.text {
+    width: 80%;
+    text-align: center;
+}
+
+.text p {
+    margin: 0; 
+    line-height: 1.5; 
+}
+@media (max-width: 599px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .image img {
+        width: 48px;
+        height: 30px;
+    }
+
+    .buttoncss {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 15px;
+    }
+
+    .image img {
+        width: 56px;
+        height: 35px;
+    }
+
+    .buttoncss {
+        padding: 10px 18px;
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 15px;    
+        width: 768px;
+
+        height: 1024px;
+        top: 2389px;
+        left: 30px;
+        gap: 0px;
+        opacity: 0px;
+    }
+
+    .image img {
+        width: 60px;
+        height: 38px;
+    }
+
+    .buttoncss {
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+
+
+}

@@ -4,115 +4,38 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="website.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body{
-            margin: 0;
-            font-family: 'Lexend Deca';
-        }
-        :root{
-            --orange: #E38826;
-            --cyan: #006970;
-            --darkcyan: #004241;
-            --white:#ffffff;
-        }
-    .grid-container {
-        display: grid;
-        grid-template-columns: auto auto auto  ;
-    }
-    .image{
-    width: 64px;
-    height: 40px;
-    top: 20px;
-    left: 30px;
-    padding: 0px 0.08px 0px 0px;
-    gap: 0px;
-    opacity: 0px;
-   
-    }
-    .SEDAN{
-    background: var(--orange);
-    height: 100vh;
-
-    }
-    .LUXURY{
-    background:var(--darkcyan);
-    height: 100vh;
- 
-}
-.SUVS{
-    background: var(--cyan);
-   
-    height: 100vh;
-
-}
-    .title{
-    color: var(--white);
-    font-family: 'Lexend Deca';
-
-    }
-    .para{
-     color:var(--white);
-     font-family: 'Lexend Deca';
     
-    }
-    .buttoncss{
-        border-radius:30px; 
-        padding:5% 19%;
-        background-color: transparent;
-        color: var(--white);
-        border: 2px solid var(--white);
-    }
-        
-      .text{
-            width:40% ;
-           text-align:justify;
-           margin: 25%;
-      }
-      #sebutton:hover{
-        background-color: var(--white);
-        color:var(--orange);
-      }
-      #subutton:hover{
-        background-color:var(--white);
-        color: var(--cyan);
-      }
-      #lubutton:hover{
-        background-color:var(--white);
-        color: var(--darkcyan);
-      }
-      
-    </style>
+    
 </head>
 <body>
     <div class="grid-container">
         <div class="SEDAN">
             <div class="text">
-            <div class="image"><img src="SEDAN.png" alt=""></div>
-            <div class="title"><h1>SEDAN</h1></div>
-            <div class="para"><p>Choose a sedan for its affordability and excellent fuel economy . Ideal for cruising in the city or on your next road trip .</p></div>
-            <div><input type="button" id="sebutton" class="buttoncss" value="learn more"> </div>
-        </div>
+                <div class="image"><img src="SEDAN.png" alt="SEDAN"></div>
+                <div class="title"><h1>SEDAN</h1></div>
+                <div class="para"><p>Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip.</p></div>
+                <div><input type="button" id="sebutton" class="buttoncss" value="Learn More"></div>
+            </div>
         </div>
         <div class="SUVS">
             <div class="text">
-            <div class="image"><img src="SUVS.png" alt=""></div>
-            <div class="title"><h1>SUVS</h1></div>
-            <div class="para"><P>take an SUV for its spacious interior,power, and verasatility.perfect for your next family vacation and off-road adventures.</P></div>
-            <div><input type="button" id="subutton" class="buttoncss" value="learn more"> </div>
-        </div>
+                <div class="image"><img src="SUVS.png" alt="SUVS"></div>
+                <div class="title"><h1>SUVS</h1></div>
+                <div class="para"><p>Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation and off-road adventures.</p></div>
+                <div><input type="button" id="subutton" class="buttoncss" value="Learn More"></div>
+            </div>
         </div>
         <div class="LUXURY">
             <div class="text">
-            <div class="image"><img src="LUXURY.png" alt=""></div>
-            <div class="title"><h1>LUXURY</h1></div>
-            <div class="para"><P>Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrive in style </P></div>
-            <div><input type="button" id="lubutton" class="buttoncss" value="learn more"> </div>
+                <div class="image"><img src="LUXURY.png" alt="LUXURY"></div>
+                <div class="title"><h1>LUXURY</h1></div>
+                <div class="para"><p>Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrive in style.</p></div>
+                <div><input type="button" id="lubutton" class="buttoncss" value="Learn More"></div>
+            </div>
         </div>
-        </div> 
     </div>
 </body>
 </html>
