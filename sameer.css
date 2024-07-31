@@ -1,71 +1,49 @@
-.titofic{
-    font-family: 'Big Shoulders Display';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 40px;
-}
-
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
 .container {
-    display: flex;
-    height: 100vh;
-}
-
-.card {
-    flex: 1;
-    color: white;
+    background-color: #fff;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.sedan {
-    background: #E38826;
-
-}
-
-.suvs {
-    background: #006970;
-
-}
-
-.luxury {
-    background: #004241;
-
-
-}
-
-.card h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.card p {
-    font-size: 1.2em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin-bottom: 20px;
 }
 
-.card button {
+button {
     padding: 10px 20px;
-    font-size: 1em;
-    color: white; 
-    background-color:transparent;
-    border: 2px solid white;
-    cursor:pointer;
-    border-radius: 20px;
+    border: none;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.card button:hover {
-    background-color: #ddd; 
+button:hover {
+    background-color: #0056b3;
 }
-.icoooo{
-    
+
+#result {
+    display: none;
+    margin-top: 20px;
+}
+
+#photosContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.flickrImage {
+    max-width: 150px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
