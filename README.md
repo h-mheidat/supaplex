@@ -1,2 +1,0 @@
-# supaplex
-supaplex game
