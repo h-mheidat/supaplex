@@ -1,148 +1,171 @@
-:root {
-    --sedan_background: #E38826;
-    --suvs_backgroundcolor: #006970;
-    --luxury_backgroundcololor: #004241;
-    --fontColor: #F2F2F2;
+:root{
+    --sedan_background:#E38826;
+  --suvs_backgroundcolor:#006970;
+  --luxury_backgroundcololor:#004241;
+  --fontColor:#F2F2F2;
+  margin: 0;
+  padding: 0;
   }
   
-  /* Reset body margin */
-  body {
-    margin: 0;
-    padding: 0; /* Optional: reset default padding if necessary */
-  }
   
-  /*tablet*/
-  @media (min-width: 360px) and (max-width: 768px) {
-    #div1_Sedan {
-      background-color: var(--sedan_background);
-      display: flex;
-      justify-content: center;
-      text-align: center;
-    }
-  
-    #div2_Suvs {
-      background-color: var(--suvs_backgroundcolor);
-      display: flex;
-      justify-content: center;
-      text-align: center;
-    }
-  
-    #div3_luxury {
-      background-color: var(--luxury_backgroundcololor);
-      display: flex;
-      justify-content: center;
-      text-align: center;
-    }
-  }
-  
-  h1 {
-    font-family: 'Big Shoulders Display';
-    font-size: 30px;
-  }
-  
-  /*mobile*/
-  @media (max-width: 360px) {
-    #div1_Sedan {
-      background-color: var(--sedan_background);
-      display: flex;
-      justify-content: center;
-      text-align: center;
-    }
-  
-    #div2_Suvs {
-      background-color: var(--suvs_backgroundcolor);
-      display: flex;
-      justify-content: center;
-      text-align: center;
-    }
-  
-    #div3_luxury {
-      background-color: var(--luxury_backgroundcololor);
-      display: flex;
-      justify-content: center;
-      text-align: center;
-    }
-  }
-  
-  #grid_container {
+
+.grid_container{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3 ,1fr) ;
     gap: 0px;
     padding: 10px;
     height: 100vh;
     text-align: center;
-    color: var(--fontColor);
-  }
-  
-  #div1_Sedan {
-    background-color: var(--sedan_background);
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  }
-  
-  #div2_Suvs {
-    background-color: var(--suvs_backgroundcolor);
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  }
-  
-  #div3_luxury {
-    background-color: var(--luxury_backgroundcololor);
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  }
-  
-  h1 {
-    font-family: 'Big Shoulders Display';
+    color:var(--fontColor);
+    
+ }
+    .div1_Sedan{
+        background-color: var(--sedan_background);
+display: flex;
+    }
+    .div1_Sedan div{
+align-self: center;
+
+    }
+
+    .div2_Suvs{
+        
+        background-color: var(--suvs_backgroundcolor);
+display: flex;    }
+    .div3_luxury{
+        background-color: var(--luxury_backgroundcololor);
+display: flex;    }
+.div2_Suvs div{
+    align-self:center ;
+}
+.div3_luxury div{
+    align-self:center ;
+}
+    h1{
+        font-family: 'Big Shoulders Display';
     font-size: 30px;
-  }
-  
-  p {
+    margin-left:-50px;
+
+    }
+    img{
+      margin-left:-50px;
+    }
+
+p{
     font-family: 'Lexend Deca';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 19px;
-    width: 233px;
-  }
-  
-  button {
+font-style: normal;
+font-weight: 400px;
+font-size: 15px;
+line-height: 19px;
+width:233px;
+margin-left:50px;
+text-align: justify;
+}
+button{
     border: 1px solid #F2F2F2;
-    border-radius: 30px;
-    color: #F2F2F2;
-    background-color: transparent;
-    padding: 15px 30px;
-    gap: 8px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  #div3_luxury button:hover {
+border-radius: 30px;
+color: #F2F2F2;
+background-color: transparent;
+
+padding: 15px 30px;
+gap: 8px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+margin-left:100px;
+}
+
+.div3_luxury button:hover{
+    background: #FFFFFF;
+border-radius: 30px;
+color:var(--luxury_backgroundcololor)
+}
+.div2_Suvs button:hover{
     background: #FFFFFF;
     border-radius: 30px;
-    color: var(--luxury_backgroundcololor);
-  }
-  
-  #div2_Suvs button:hover {
+    color:var(--suvs_backgroundcolor)
+}
+
+.div1_Sedan button:hover{
     background: #FFFFFF;
     border-radius: 30px;
-    color: var(--suvs_backgroundcolor);
+    color:var(--sedan_background)
+}
+  
+  /*tablet*/
+  @media screen and (min-width:360px)and (max-width:768px){
+    .grid_container{
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr) ;
+        grid-template-rows: auto;      
+        gap: 0px;
+        padding: 10px;
+        height: 100vh;
+        text-align: center;
+        color:var(--fontColor);
+        
+     }
+  .div1_Sedan{
+      background-color: var(--sedan_background);
+    
+  
   }
   
-  #div1_Sedan button:hover {
-    background: #FFFFFF;
-    border-radius: 30px;
-    color: var(--sedan_background);
+  .div2_Suvs{
+      background-color: var(--suvs_backgroundcolor);
   }
-  .cen {
-    display: flex;             
-    flex-direction: column;     
-    justify-content: center;  
-    align-items: center;        
-    text-align: center;       
-    height: 100%;                
+  .div3_luxury{
+      background-color: var(--luxury_backgroundcololor);
   }
+  .grid_container > div:nth-child(odd):nth-last-child(1),
+  .grid_container > div:nth-child(even):nth-last-child(1) {
+      grid-column: span 2;
+      p{
+    margin-left: 250px;
+      }h1{
+        margin-left: 130px;
+
+      }img{
+        margin-left: 100px;
+      }button{
+        margin-left: 300px;
+
+      }
+  }}
+  h1{
+      font-family: 'Big Shoulders Display';
+  font-size: 30px;
+  }
+  /*mobile*/
+  @media screen and (max-width:360px){
+    .grid_container{
+        display: grid;
+        grid-template-columns: repeat(1 ,1fr) ;
+        grid-template-rows: auto; 
+        padding: 10px;
+        height: 100vh;
+        text-align: center;
+        color:var(--fontColor);
+        
+     }
+      .div1_Sedan{
+          background-color: var(--sedan_background);
+        
+  
+      }
+      .div2_Suvs{
+          background-color: var(--suvs_backgroundcolor);
+      }
+      .div3_luxury{
+          background-color: var(--luxury_backgroundcololor);
+      }button{
+        padding: 10px 20px;
+
+      }h1{
+        font-size: 20px;
+      }
+      p{
+        font-weight: 300px;
+
+      }
+    }
