@@ -1,0 +1,105 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container styling */
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 900px;
+    margin: 20px;
+}
+
+/* General button styling */
+button {
+    padding: 12px 24px;
+    border: none;
+    background-color: #ff5722; /* Warm orange for better contrast */
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Button hover effects */
+button:hover {
+    background-color: #e64a19; /* Slightly darker orange */
+    transform: scale(1.05);
+}
+
+/* Result message styling */
+#result {
+    display: none;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Photos container styling */
+#photosContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Increased gap for better spacing */
+    justify-content: center;
+}
+
+/* Styling for individual Flickr images */
+.flickrImage {
+    max-width: 200px;
+    height: auto;
+    border-radius: 12px; /* More rounded corners for a modern look */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Image hover effect */
+.flickrImage:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+/* Pagination styling */
+#pagination {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Pagination buttons styling */
+#pagination button {
+    padding: 12px 24px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Disabled state for pagination buttons */
+#pagination button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* Hover effect for pagination buttons */
+#pagination button:hover:not(:disabled) {
+    background-color: #f0f0f0;
+    border-color: #ccc;
+}
