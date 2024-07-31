@@ -1,114 +1,116 @@
-.titofic {
-    font-family: 'Big Shoulders Display', cursive;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 40px;
-}
-
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
-}
-
-.container {
-    display: flex;
-    height: 100vh;
-}
-
-.card {
-    flex: 1 1 33.33%;
-    color: white;
-    padding: 20px;
+    margin: 0;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    background-color: #2b1a2e;
+    min-height: 100vh;
+}
+
+nav {
+    background-color: #333;
+    width: 100%;
+    display: flex;
     justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
     align-items: center;
 }
 
-.sedan {
-    background: #E38826;
+nav ul li {
+    padding: 8px 16px;
 }
 
-.suvs {
-    background: #006970;
-}
-
-.luxury {
-    background: #004241;
-}
-
-.card h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.card p {
-    font-size: 1.2em;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.learn-more-button {
-    display: inline-block;
-    padding: 15px 30px;
-    font-size: 16px;
-    font-weight: bold;
+nav ul li a {
+    display: block;
     color: white;
-    background-color: transparent;
-    border: 2px solid white;
-    border-radius: 100px;
     text-align: center;
     text-decoration: none;
-    transition: background-color 0.3s, color 0.3s;
 }
 
-.learn-more-button:hover {
-    background-color: white;
+nav ul li a:hover {
+    background-color: #111;
+}
+
+nav ul li input[type="text"] {
+    padding: 6px;
+    font-size: 17px;
+    border: none;
+    border-radius: 20px;
+    width: 200px;
+    text-align: center;
+}
+
+nav ul li button {
+    padding: 6px 10px;
+    margin-left: 4px;
+    background-color: #ddd;
     color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
 }
 
-p {
-    width: 237px;
+nav ul li button:hover {
+    background-color: #ccc;
 }
 
-@media (min-width:360px) and (max-width:768px) {
-    .container {
-        display: grid;
-    }
-    .card {
-        flex: 1 1 50%;
-    }
-    .card h2 {
-        font-size: 1.8em;
-    }
-    .card p {
-        font-size: 1.1em;
-    }
-    .learn-more-button {
-        padding: 12px 24px;
-        font-size: 14px;
-    }
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px; /* Height of the navbar */
+    flex-grow: 1;
+    width: 100%;
 }
 
-@media (max-width: 360px) {
-    .container {
-        flex-direction: column;
-    }
-    .card {
-        flex: 1 1 100%;
-    }
-    .card h2 {
-        font-size: 1.5em;
-    }
-    .card p {
-        font-size: 1em;
-    }
-    .learn-more-button {
-        padding: 10px 20px;
-        font-size: 12px;
-    }
-    p {
-        width: 100%;
-    }
+#photo-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: center;
+}
+
+.photo {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+#pagination-container {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+#pagination-container button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    background-color: #6398c4;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+#pagination-container button:hover {
+    background-color: #555;
+}
+.midofpage{
+    margin-top: 15%;
 }
