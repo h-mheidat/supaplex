@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400&display=swap');
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Big Shoulders Display';
+    background-color: #f5f5f5;
+}
+:root{
+    --card1:#E38826 ;
+    --card2:#006970 ;
+    --card3:#004241 ;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 10px;
+    font-family: 'Big Shoulders Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    
+   
+    height: 100vh; /* Make container full viewport height */
+    box-sizing: border-box;
+    align-items: stretch; /* Stretch children to fill container height */
+    justify-content: center; /* Center cards horizontally */
+    
+}
+
+.card {
+    flex: 1 1 calc(33.33% - 40px);
+    display: flex;
+    flex-direction: column;
+    align-content: baseline;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color:var(--card1);
+    padding: 20px;
+    width: 100%;
+    height: auto; 
+}
+
+.card2 {
+    background-color: var(--card2);
+}
+
+.card3 {
+    background-color: var(--card3);
+}
+
+.card img {
+    width: 63.92px;
+    height: 40px;
+     margin-bottom: 20px;
+}
+.card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #fff; 
+    font-family: 'Big Shoulders Display';
+    font-weight: 400;
+    font-size: 30px;
+     line-height: 40px;
+     color: #FFFFFF;
+}
+
+.card p {
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18.75px;
+    text-align: left;
+     color: #FFFFFF;
+    width: 217px;
+    height: 95px;
+     
+
+}
+
+.btn {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 25px;
+  color: white;
+    padding: 10px 20px;
+ cursor: pointer;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Lexend Deca';
+    margin-top: 20px;
+    align-self: center;
+    
+}
+
+.card .btn:hover {
+    background-color:  #f2f2f2 ;
+    color: var(--card1);
+}
+.card2 .btn:hover {
+    background-color:  #f2f2f2 ;
+    color: var(--card2);
+}
+.card3 .btn:hover {
+    background-color:  #f2f2f2 ;
+    color: var(--card3);
+}
+
+/* Responsive Design */
+@media (min-width: 1024px) {
+    .card {
+        width: calc(33.33% - 20px); /* 3 cards per row with space for padding */
+    }
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+    .card {
+        width: calc(50% - 20px); /* 2 cards per row with space for padding */
+    }
+}
+
+@media (max-width: 767px) {
+    .card {
+        width: calc(100% - 20px); /* 1 card per row with space for padding */
+    }
+}
