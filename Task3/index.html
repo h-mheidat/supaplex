@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flickr Image Extractor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Flickr Image Extractor</h1>
+        <input type="text" id="searchTextbox" placeholder="Enter search term">
+        <button id="fetchButton">Fetch Images</button>
+        <div id="result">
+            <h2>Images</h2>
+            <div id="photosContainer"></div>
+            <div id="pagination">
+                <button id="prevButton" disabled>«</button>
+                <span id="pageNumbers"></span>
+                <button id="nextButton" disabled> »</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
